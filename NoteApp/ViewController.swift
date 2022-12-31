@@ -21,9 +21,7 @@ class ViewController: UIViewController, AddNoteProtocol {
             self.notes = try context.fetch(NoteModel.fetchRequest())
             self.tableView.reloadData()
         }
-        catch {
-            
-        }
+        catch { }
     }
 
     override func viewDidLoad() {
